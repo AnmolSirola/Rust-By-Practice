@@ -1,3 +1,6 @@
+// using standard lib std and using io module
+// :: path seperator module
+
 use std::io;
 
 fn main(){

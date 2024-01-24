@@ -8,7 +8,9 @@
 
 fn main(){
 
-    let cond = (2 as f32) < 3.3;
+    let cond = (2 as f32) <= 3.3;
 
-    println!("{}", cond);
+    let con2 = !(true || cond);
+
+    println!("{}", cond2);
 }
