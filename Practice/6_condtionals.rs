@@ -31,3 +31,29 @@ fn main(){
         println!("Oh, that's bad!");
     }
 }
+
+fn main(){
+
+    let mut counter = 5;
+
+    while counter >= 1 {
+        println!("Counter is {}", counter);
+        counter = counter - 1;
+    };
+
+    println!("Lift off!");
+}
+
+fn main(){
+
+    let mut i = 1;
+    
+        loop{
+            println!("i is {}", i);
+            i = i + 1;
+    
+            if i == 10{
+                break;
+            }
+        }   
+}
