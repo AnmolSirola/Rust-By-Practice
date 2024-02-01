@@ -4,7 +4,7 @@ struct User{
 }
 
 fn print_name(user_name:&str) {
-    println!("user ame: {}", user_name);
+    println!("user name: {}", user_name);
 }
 
 fn main(){

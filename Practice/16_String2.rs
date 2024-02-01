@@ -1,11 +1,4 @@
 
-
-fn print_color(person:Person) {
-    println!("name:{}", person.name);
-    println!("color:{}", person.color);
-}
-
-
 struct Person{
     age: i32,
     name: String,
@@ -46,4 +39,9 @@ fn main(){
             print_color(person);
         }
     }
+}
+
+fn print_color(person:Person) {
+    println!("name:{}", person.name);
+    println!("color:{}", person.color);
 }
