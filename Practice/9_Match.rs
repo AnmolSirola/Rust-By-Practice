@@ -17,6 +17,6 @@ fn main(){
         3 => println!("It is three"),
         4 => println!("It is four"),
         5 => println!("It is five"),
-        _ => println!("It is something else"),
+        _ => println!("It is something else"), // _ indicates anything else other than the above in our case other than 1,2,3,4,5
     }
 }
