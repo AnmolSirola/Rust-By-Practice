@@ -15,19 +15,19 @@ fn main(){
         }
 
         Person{
-            age: 20,
+            age: 22,
             name: "Saum".to_string(),
             color: "Yellow".to_string(),
         }
 
         Person{
-            age: 21,
+            age: 16,
             name: "Harshi".to_string(),
             color: "Red".to_string(),
         }
 
         Person{
-            age: 21,
+            age: 20,
             name: "San".to_string(),
             color: "Green".to_string(),
         }
