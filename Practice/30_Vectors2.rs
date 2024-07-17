@@ -1,29 +1,37 @@
-/*
- Requirements:
- - Print 10, 20, "thirty", and 40 in a loop
- - Print the total number of elements in a vector
-
- Notes:
- - Use a vector to store 4 numbers
- - Iterate through the vector using a for ..in loop
- - Determine whether to print the number or print "thristy" inside a loop
- - Use the .len() function to print the number of elements in a vector 
-*/
-
 fn main() {
-    // Create a vector to store numbers
-    let numbers = vec![10, 20, 30, 40];
+    // Creating a vector with initial values
+    let mut numbers: Vec<i32> = vec![10, 20, 30, 40];
 
-    // Iterate through the vector using a for .. in loop
+    // Printing the original vector
+    println!("Original Vector: {:?}", numbers);
+
+    // Accessing elements in a vector using indexing
+    let second_element = numbers[1];
+    println!("Second Element: {}", second_element);
+
+    // Modifying an element in the vector
+    numbers[2] = 35;
+    println!("Modified Vector: {:?}", numbers);
+
+    // Adding an element to the end of the vector
+    numbers.push(50);
+    println!("Vector after push: {:?}", numbers);
+
+    // Removing an element from the vector
+    let removed_element = numbers.pop();
+    println!("Vector after pop: {:?}, Removed Element: {:?}", numbers, removed_element);
+
+    // Iterating through the vector
+    println!("Iterating through the Vector:");
     for num in &numbers {
-        // Determine whether to print the number or "thirty"
-        if *num == 30 {
-            println!("thirty");
-        } else {
-            println!("{}", num);
-        }
+        println!("{}", num);
     }
 
-    // Print the total number of elements in the vector using .len() function
-    println!("Total number of elements: {}", numbers.len());
+    // Using .len() to get the number of elements in the vector
+    let num_elements = numbers.len();
+    println!("Number of Elements in the Vector: {}", num_elements);
+
+    // Creating a vector with a repeated value
+    let repeated_vector: Vec<i32> = vec![5; 3]; // Creates a vector with three elements, all set to 5
+    println!("Repeated Vector: {:?}", repeated_vector);
 }
