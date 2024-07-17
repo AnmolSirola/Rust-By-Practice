@@ -12,4 +12,4 @@ let my_box = ShippingBox{
 };
 
 let tall = my_box.height;
-println!("The height of the box is {}.", tall);
+println!("The height of the box is {}.", tall); 

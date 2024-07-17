@@ -13,10 +13,3 @@ struct GroceryItem{
     stock: i32,
     price: f32,
 }
-
-struct Demo{
-    f1: i32,
-    f2: f32,
-    f3: String,
-    f4: bool,
-}

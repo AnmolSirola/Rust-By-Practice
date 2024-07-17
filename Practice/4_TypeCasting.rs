@@ -1,4 +1,4 @@
-fn maim(){
+fn main(){
 
     let x = 127 as i64;
 
@@ -6,5 +6,5 @@ fn maim(){
 
     let z = x / (y as i64 );
 
-    printf!("{}", z)
+    println!("{}", z)
 }
